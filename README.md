@@ -14,8 +14,6 @@ This AI-powered Streamlit app uses Google Gemini to help creators **edit, schedu
 - 📅 Schedule YouTube uploads with local time input
 
 
-
-
 ## 🛠 Tech Stack
 
 - `Google Gemini API` (text + metadata extraction)
@@ -25,6 +23,45 @@ This AI-powered Streamlit app uses Google Gemini to help creators **edit, schedu
 - `pytube`, `moviepy` (video processing)
 - 📽️ FFmpeg – for video editing and trimming
 - 🧩 Other APIs – GIF libraries, localization, trend fetching
+
+### 📂 Project Structure
+
+```plaintext
+Creator_Chat/
+├── app.py                 # Main Streamlit app with Gemini-powered chatbot
+├── youtube_uploader.py   # Handles YouTube authentication, uploads, scheduling, and metadata
+├── utils.py              # Helper functions (if applicable)
+├── client_secret.json    # OAuth credentials for YouTube API (DO NOT COMMIT)
+├── requirements.txt      # Python dependencies
+├── .env                  # Environment config for Gemini & paths
+└── README.md             # Project documentation
+
+
+### 🔑 YouTube API Setup
+
+To enable YouTube upload and scheduling features, you must:
+
+1. **Create a Google Cloud Project**
+   - Go to: [Google Cloud Console](https://console.cloud.google.com/)
+   - Click "New Project" and give it a name.
+
+2. **Enable YouTube Data API v3**
+   - In the left sidebar, go to **APIs & Services > Library**
+   - Search for **YouTube Data API v3**
+   - Click **Enable**
+
+3. **Create OAuth 2.0 Credentials**
+   - Go to **APIs & Services > Credentials**
+   - Click **"Create Credentials" > OAuth client ID**
+   - Select:
+     - **Application type**: Desktop App or Web App
+     - Provide any name
+   - Download the `client_secret.json` file and place it in the root of this project
+
+4. **Add the following line to your `.env` file**
+```dotenv
+GOOGLE_CLIENT_SECRET_FILE=client_secret.json
+
 
 Steps to run the app on your local system
 1. Clone the repo :
