@@ -10,16 +10,20 @@ This AI-powered Streamlit app uses Google Gemini to help creators **edit, schedu
 
 - ✂️ Trim and edit videos from chat prompts
 - 🧠 Gemini-powered title, description, and tag suggestions
+-  📊 See trending videos and keyword insights
 - 📅 Schedule YouTube uploads with local time input
-- 📊 See trending videos and keyword insights
+
+
 
 
 ## 🛠 Tech Stack
 
 - `Google Gemini API` (text + metadata extraction)
-- `Streamlit` (frontend + interaction)
+- 🎞️ Streamlit – chat UI and app frontend
 - `Python` (core logic and APIs)
 - `YouTube Data API v3` (upload + schedule)
 - `pytube`, `moviepy` (video processing)
+- 📽️ FFmpeg – for video editing and trimming
+- 🧩 Other APIs – GIF libraries, localization, trend fetching
 
 
