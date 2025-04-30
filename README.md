@@ -39,16 +39,18 @@ Create a .env file conatining
 API_KEY=your_gemini_api_key_here
 YOUTUBE_API_KEY=your_youtube_api_key_here
 
-4. Run the app
+4.Place your youtube API credentials 
+Download client_secret.json from the Google Cloud Console and place it in the project root.
+
+5. Run the app
 streamlit run app.py
+
 
 
 🌱 Future Improvements
 Improve Gemini’s contextual awareness for multi-turn conversations
-
 Enable Instagram and TikTok upload automation
-
 Add multi-language voice command support
-
 Real-time YouTube analytics dashboard + sentiment detection
+
 
