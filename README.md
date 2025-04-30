@@ -26,4 +26,29 @@ This AI-powered Streamlit app uses Google Gemini to help creators **edit, schedu
 - 📽️ FFmpeg – for video editing and trimming
 - 🧩 Other APIs – GIF libraries, localization, trend fetching
 
+Steps to run the app on your local system
+1. Clone the repo :
+git clone https://github.com/HarshitaD21/Creator_Chat.git
+cd Creator_Chat
+
+2. Install dependencies: 
+pip install -r requirements.txt
+
+3. Set up environment:
+Create a .env file conatining 
+API_KEY=your_gemini_api_key_here
+YOUTUBE_API_KEY=your_youtube_api_key_here
+
+4. Run the app
+streamlit run app.py
+
+
+🌱 Future Improvements
+Improve Gemini’s contextual awareness for multi-turn conversations
+
+Enable Instagram and TikTok upload automation
+
+Add multi-language voice command support
+
+Real-time YouTube analytics dashboard + sentiment detection
 
