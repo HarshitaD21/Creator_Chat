@@ -26,7 +26,7 @@ This AI-powered Streamlit app uses Google Gemini to help creators **edit, schedu
 
 ### 📂 Project Structure
 
-<pre> ```plaintext Creator_Chat/ ├── app.py # Main Streamlit app with Gemini-powered chatbot ├── youtube_uploader.py # Handles YouTube authentication, uploads, scheduling, and metadata ├── utils.py # Helper functions (if applicable) ├── client_secret.json # OAuth credentials for YouTube API (DO NOT COMMIT) ├── requirements.txt # Python dependencies ├── .env # Environment config for Gemini & paths └── README.md # Project documentation ``` ← THIS closes the fenced code block </pre>
+<pre> ```plaintext Creator_Chat/ ├── app.py # Main Streamlit app with Gemini-powered chatbot ├── youtube_uploader.py # Handles YouTube authentication, uploads, scheduling, and metadata ├── utils.py # Helper functions (if applicable) ├── client_secret.json # OAuth credentials for YouTube API (DO NOT COMMIT) ├── requirements.txt # Python dependencies ├── .env # Environment config for Gemini & paths └── README.md # Project documentation ``` </pre>
 
 
 ### 🔑 YouTube API Setup
